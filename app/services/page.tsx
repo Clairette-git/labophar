@@ -9,7 +9,7 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-teal-700 to-teal-500 text-white py-20">
+      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl max-w-3xl">
@@ -33,37 +33,37 @@ export default function ServicesPage() {
             <ServiceCard
               title="Pharmaceutical Manufacturing"
               description="Production of high-quality pharmaceutical products including tablets, capsules, and our upcoming IV fluids, syrups, and ointments."
-              icon={<Pill className="h-10 w-10 text-teal-700" />}
+              icon={<Pill className="h-10 w-10 text-skyblue-700" />}
             />
 
             <ServiceCard
               title="Medical Gas Supply"
               description="Production and distribution of medical oxygen and nitrogen to healthcare facilities, ensuring a reliable supply of these essential gases."
-              icon={<Flask className="h-10 w-10 text-teal-700" />}
+              icon={<Flask className="hh-10 w-10 text-skyblue-700" />}
             />
 
             <ServiceCard
               title="Medical Equipment"
               description="Supply of essential medical equipment to healthcare facilities, including diagnostic tools, treatment equipment, and monitoring devices."
-              icon={<ShieldPlus className="h-10 w-10 text-teal-700" />}
+              icon={<ShieldPlus className="h-10 w-10 text-skyblue-700" />}
             />
 
             <ServiceCard
               title="Waste Management"
               description="Management of the Nduba landfill and provision of hazardous waste treatment services to public and private institutions in Rwanda."
-              icon={<Beaker className="h-10 w-10 text-teal-700" />}
+              icon={<Beaker className="h-10 w-10 text-skyblue-7000" />}
             />
 
             <ServiceCard
               title="Distribution Network"
               description="Efficient distribution of pharmaceutical products throughout Rwanda and neighboring countries, ensuring timely delivery to healthcare facilities."
-              icon={<Truck className="h-10 w-10 text-teal-700" />}
+              icon={<Truck className="h-10 w-10 text-skyblue-700" />}
             />
 
             <ServiceCard
               title="Technical Support"
               description="Technical support and maintenance services for medical equipment and gas supply systems, ensuring optimal performance and reliability."
-              icon={<Wrench className="h-10 w-10 text-teal-700" />}
+              icon={<Wrench className="h-10 w-10 text-skyblue-700" />}
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function ServicesPage() {
                 Every batch of our products undergoes rigorous testing in our quality control laboratory before release,
                 ensuring that they meet all specifications and quality standards.
               </p>
-              <Button asChild className="bg-teal-600 hover:bg-teal-700">
+              <Button asChild className="bg-skyblue-500 hover:bg-skyblue-600 text-white">
                 <Link href="/about" className="flex items-center gap-2">
                   Learn More About Us <ArrowRight size={16} />
                 </Link>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
                 Through these collaborations, we contribute to strengthening healthcare systems and improving public
                 health in Rwanda and neighboring countries.
               </p>
-              <Button asChild className="bg-teal-600 hover:bg-teal-700">
+              <Button asChild className="bg-skyblue-500 hover:bg-skyblue-600 text-white">
                 <Link href="/contact" className="flex items-center gap-2">
                   Partner With Us <ArrowRight size={16} />
                 </Link>
@@ -142,7 +142,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-teal-700 to-teal-500 text-white">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Need Our Services?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
@@ -151,7 +151,7 @@ export default function ServicesPage() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-teal-700 hover:bg-teal-50 border-2 border-teal-300 shadow-lg"
+            className="bg-white text-skyblue-700 hover:bg-skyblue-50 border-2 border-skyblue-300 shadow-lg"
           >
             <Link href="/contact">Get in Touch</Link>
           </Button>
@@ -171,7 +171,7 @@ function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
     <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
       <CardContent className="p-8">
-        <div className="bg-teal-100 p-4 rounded-full w-fit mb-6">{icon}</div>
+        <div className="bg-skyblue-100 p-4 rounded-full w-fit mb-6">{icon}</div>
         <h3 className="text-xl font-bold mb-3">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </CardContent>

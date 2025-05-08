@@ -6,7 +6,7 @@ export default function ProductsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-teal-700 to-teal-500 text-white py-20">
+      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Products</h1>
           <p className="text-xl max-w-3xl">
@@ -142,7 +142,7 @@ export default function ProductsPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="bg-teal-100 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <div className="bg-skyblue-100 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                 <Image src="/placeholder.svg?height=40&width=40" alt="GMP Certified" width={40} height={40} />
               </div>
               <h3 className="text-xl font-bold mb-2">GMP Certified</h3>
@@ -191,13 +191,13 @@ function ProductCard({ name, category, image, description, upcoming = false }: P
       <div className="relative h-48">
         <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover" />
         {upcoming && (
-          <div className="absolute top-2 right-2 bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded">
+          <div className="absolute top-2 right-2 bg-skyblue-500 text-white text-xs font-bold px-2 py-1 rounded">
             Coming Soon
           </div>
         )}
       </div>
       <CardContent className="p-6">
-        <div className="text-sm text-teal-600 font-medium mb-1">{category}</div>
+        <div className="text-sm text-skyblue-500 font-medium mb-1">{category}</div>
         <h3 className="text-xl font-bold mb-2">{name}</h3>
         <p className="text-gray-600">{description}</p>
       </CardContent>

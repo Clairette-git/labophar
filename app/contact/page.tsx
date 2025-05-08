@@ -50,7 +50,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-teal-700 to-teal-500 text-white py-20">
+      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl max-w-3xl">Get in touch with our team for inquiries about our products and services.</p>
@@ -63,8 +63,8 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="bg-teal-100 p-4 rounded-full mb-4">
-                  <MapPin className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-4 rounded-full mb-4">
+                  <MapPin className="h-6 w-6 text-skyblue-70" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Our Location</h3>
                 <p className="text-gray-600">Kigali, Rwanda</p>
@@ -73,8 +73,8 @@ export default function ContactPage() {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="bg-teal-100 p-4 rounded-full mb-4">
-                  <Phone className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-4 rounded-full mb-4">
+                  <Phone className="h-6 w-6 text-skyblue-70" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Phone Number</h3>
                 <p className="text-gray-600">+250 788 846 574</p>
@@ -84,11 +84,11 @@ export default function ContactPage() {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="bg-teal-100 p-4 rounded-full mb-4">
-                  <Mail className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-4 rounded-full mb-4">
+                  <Mail className="h-6 w-6 text-skyblue-70" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Email Address</h3>
-                <a href="mailto:info@labophar.rw" className="text-gray-600 hover:text-teal-600">
+                <a href="mailto:info@labophar.rw" className="text-gray-600 hover:text-skyblue-500">
                   info@labophar.rw
                 </a>
               </CardContent>
@@ -153,7 +153,7 @@ export default function ContactPage() {
                 <div>
                   <Button
                     type="submit"
-                    className="w-full md:w-auto bg-teal-600 hover:bg-teal-700"
+                    className="w-full md:w-auto bg-skyblue-500 hover:bg-skyblue-600 text-white"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}

@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-teal-700 to-teal-500 text-white py-20">
+      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Labophar Ltd</h1>
           <p className="text-xl max-w-3xl">
@@ -49,7 +49,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-teal-600 mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-skyblue-600 mb-4">Our Mission</h3>
               <p className="text-lg text-gray-700">
                 To avail high quality affordable medicines in Rwanda and Africa, improving healthcare access and
                 outcomes for all communities we serve.
@@ -57,7 +57,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-teal-600 mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-skyblue-600 mb-4">Our Vision</h3>
               <p className="text-lg text-gray-700">
                 To be the leading pharmaceutical manufacturer in East Africa, known for quality, innovation, and
                 commitment to improving public health.

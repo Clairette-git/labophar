@@ -8,7 +8,7 @@ export default function ExpansionPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-teal-700 to-teal-500 text-white py-20">
+      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Strategic Expansion</h1>
           <p className="text-xl max-w-3xl">
@@ -63,7 +63,7 @@ export default function ExpansionPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Image src="/placeholder.svg?height=40&width=40" alt="IV Fluids" width={40} height={40} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">IV Fluids</h3>
@@ -76,7 +76,7 @@ export default function ExpansionPage() {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Image src="/placeholder.svg?height=40&width=40" alt="IV Bags" width={40} height={40} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">IV Bags</h3>
@@ -88,7 +88,7 @@ export default function ExpansionPage() {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Image src="/placeholder.svg?height=40&width=40" alt="Syrups" width={40} height={40} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Syrups</h3>
@@ -100,7 +100,7 @@ export default function ExpansionPage() {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <div className="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Image src="/placeholder.svg?height=40&width=40" alt="Ointments" width={40} height={40} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Ointments</h3>
@@ -130,7 +130,7 @@ export default function ExpansionPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Benefits of Our Expansion</h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-skyblue-500 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-lg text-gray-700">
                     Increased availability of essential medications in Rwanda and neighboring countries
                   </span>
@@ -168,7 +168,7 @@ export default function ExpansionPage() {
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
             Contact us to learn more about our expansion plans and upcoming product lines.
           </p>
-          <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700">
+          <Button asChild size="lg" className="bg-skyblue-500 hover:bg-skyblue-600 text-white">
             <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
