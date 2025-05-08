@@ -18,14 +18,6 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
-                <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Instagram size={20} />
-                <span className="sr-only">Instagram</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </a>
@@ -69,19 +61,19 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin size={20} className="text-teal-500 mr-2 mt-1 flex-shrink-0" />
+                <MapPin size={20} className="text-skyblue-300 mr-2 mt-1 flex-shrink-0" />
                 <span className="text-gray-400">Kigali, Rwanda</span>
               </li>
               <li className="flex items-center">
-                <Phone size={20} className="text-teal-500 mr-2 flex-shrink-0" />
+                <Phone size={20} className="text-skyblue-300 mr-2 flex-shrink-0" />
                 <span className="text-gray-400">+250 788 846 574</span>
               </li>
               <li className="flex items-center">
-                <Phone size={20} className="text-teal-500 mr-2 flex-shrink-0" />
+                <Phone size={20} className="text-skyblue-300 mr-2 flex-shrink-0" />
                 <span className="text-gray-400">+250 788 389 615</span>
               </li>
               <li className="flex items-center">
-                <Mail size={20} className="text-teal-500 mr-2 flex-shrink-0" />
+                <Mail size={20} className="text-skyblue-300 mr-2 flex-shrink-0" />
                 <a href="mailto:info@labophar.rw" className="text-gray-400 hover:text-white">
                   info@labophar.rw
                 </a>

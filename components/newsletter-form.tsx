@@ -47,14 +47,14 @@ export function NewsletterForm() {
         placeholder="Your email address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-white"
+        className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-skyblue-300 text-white"
         required
         aria-label="Email address for newsletter"
         disabled={status.type === "loading"}
       />
       <Button
         type="submit"
-        className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors flex items-center justify-center"
+        className="px-4 py-2 bg-skyblue-500 text-white rounded-md hover:bg-skyblue-600 transition-colors flex items-center justify-center"
         disabled={status.type === "loading"}
       >
         {status.type === "loading" ? (

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-teal-700 to-teal-500 text-white">
+      <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white">
         <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
         <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
           <div className="max-w-3xl">
@@ -19,10 +19,10 @@ export default function Home() {
               Manufacturing affordable medicines since 1983, committed to improving healthcare access across the region.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-white text-teal-700 hover:bg-teal-50">
+              <Button asChild size="lg" className="bg-white text-skyblue-700 hover:bg-skyblue-50">
                 <Link href="/products">Our Products</Link>
               </Button>
-              <Button asChild size="lg" className="bg-white text-teal-700 hover:bg-teal-50 border-2 border-white">
+              <Button asChild size="lg" className="bg-white text-skyblue-700 hover:bg-skyblue-50 border-2 border-white">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -44,7 +44,7 @@ export default function Home() {
                 In April 2024, LABOPHAR was acquired from the Government of Rwanda by Depot Pharmaceutique et Materiel
                 Medical Kalisimbi (DPMMK) Ltd, an experienced Rwandan owned company.
               </p>
-              <Button asChild className="bg-teal-600 hover:bg-teal-700">
+              <Button asChild className="bg-skyblue-500 hover:bg-skyblue-600">
                 <Link href="/about" className="flex items-center gap-2">
                   Learn More <ArrowRight size={16} />
                 </Link>
@@ -76,8 +76,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-teal-100 p-3 rounded-full w-fit mb-4">
-                  <Pill className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
+                  <Pill className="h-6 w-6 text-skyblue-700" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Pharmaceutical Manufacturing</h3>
                 <p className="text-gray-600">
@@ -89,8 +89,8 @@ export default function Home() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-teal-100 p-3 rounded-full w-fit mb-4">
-                  <Flask className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
+                  <Flask className="h-6 w-6 text-skyblue-700" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Medical Gases</h3>
                 <p className="text-gray-600">
@@ -102,8 +102,8 @@ export default function Home() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-teal-100 p-3 rounded-full w-fit mb-4">
-                  <ShieldPlus className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
+                  <ShieldPlus className="h-6 w-6 text-skyblue-700" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Medical Equipment</h3>
                 <p className="text-gray-600">
@@ -115,8 +115,8 @@ export default function Home() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-teal-100 p-3 rounded-full w-fit mb-4">
-                  <Microscope className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
+                  <Microscope className="h-6 w-6 text-skyblue-700" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Research & Development</h3>
                 <p className="text-gray-600">
@@ -128,8 +128,8 @@ export default function Home() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="pt-6">
-                <div className="bg-teal-100 p-3 rounded-full w-fit mb-4">
-                  <Truck className="h-6 w-6 text-teal-700" />
+                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
+                  <Truck className="h-6 w-6 text-skyblue-700" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Distribution Network</h3>
                 <p className="text-gray-600">
@@ -163,7 +163,7 @@ export default function Home() {
                 The facility will meet current Good Manufacturing Practices (GMP) and global regulatory requirements,
                 ensuring the highest quality standards for all our products.
               </p>
-              <Button asChild className="bg-teal-600 hover:bg-teal-700">
+              <Button asChild className="bg-skyblue-500 hover:bg-skyblue-600">
                 <Link href="/expansion" className="flex items-center gap-2">
                   Expansion Details <ArrowRight size={16} />
                 </Link>
@@ -174,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-teal-700 to-teal-500 text-white">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Interested in Our Products?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
@@ -183,7 +183,7 @@ export default function Home() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-teal-700 hover:bg-teal-50 border-2 border-teal-300 shadow-lg"
+            className="bg-white text-skyblue-700 hover:bg-skyblue-50 border-2 border-skyblue-300 shadow-lg"
           >
             <Link href="/contact">Get in Touch</Link>
           </Button>
