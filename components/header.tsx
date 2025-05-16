@@ -15,7 +15,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="relative h-12 w-48">
+            <div className="relative h-16 w-64 md:h-20 md:w-80">
               <Image src="./labophar-logo.png" alt="Labophar Logo" fill className="object-contain" priority />
             </div>
           </Link>

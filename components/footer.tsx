@@ -10,18 +10,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="relative h-12 w-48 mb-4">
-              <Image src="./labophar-logo.png" alt="Labophar Logo" fill className="object-contain" />
+            <div className="relative h-16 w-64 mb-4">
+              <Image src="./LABOPHAR_LOGO_NO_BLACK_BG.png" alt="Labophar Logo" fill className="object-contain" />
             </div>
-            <p className="text-gray-400 mb-4">
-              A private Rwandan pharmaceutical company manufacturing high-quality affordable medicines since 1983.
-            </p>
+            
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Linkedin size={20} />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </div>
+  <a
+    href="https://www.linkedin.com/company/labophar-ltd/posts/?feedView=all&viewAsMember=true"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-white"
+  >
+    <Linkedin size={20} />
+    <span className="sr-only">LinkedIn</span>
+  </a>
+</div>
           </div>
 
           {/* Quick Links */}
@@ -48,11 +51,6 @@ export default function Footer() {
                   Expansion Plans
                 </Link>
               </li>
-              <li>
-                <Link href="/careers" className="text-gray-400 hover:text-white">
-                  Careers
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -74,8 +72,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-skyblue-300 mr-2 flex-shrink-0" />
-                <a href="mailto:info@labophar.rw" className="text-gray-400 hover:text-white">
-                  info@labophar.rw
+                <a href="mailto:it@depotkalisimba.org" className="text-gray-400 hover:text-white">
+                  info@labophar.org
                 </a>
               </li>
             </ul>
