@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone } from "lucide-react"
 
+
 export default function ContactPage() {
   const [formState, setFormState] = useState({
     name: "",
@@ -60,14 +61,25 @@ export default function ContactPage() {
       {/* Contact Information */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="bg-skyblue-100 p-4 rounded-full mb-4">
                   <MapPin className="h-6 w-6 text-skyblue-70" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Our Location</h3>
+                <h3 className="text-xl font-bold mb-2">Headquarter</h3>
+                <p className="text-gray-600">M Peace Plaza, Tower B, 7th Floor</p>
                 <p className="text-gray-600">Kigali, Rwanda</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-6 flex flex-col items-center text-center">
+                <div className="bg-skyblue-100 p-4 rounded-full mb-4">
+                  <MapPin className="h-6 w-6 text-skyblue-70" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Manufacturing Plant</h3>
+                <p className="text-gray-600">Huye, Rwanda</p>
               </CardContent>
             </Card>
 
@@ -88,8 +100,8 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-skyblue-70" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Email Address</h3>
-                <a href="mailto:info@labophar.rw" className="text-gray-600 hover:text-skyblue-500">
-                  info@labophar.rw
+                <a href="mailto:marcletty12@gmail.com" className="text-gray-600 hover:text-skyblue-500">
+                info@labophar.org
                 </a>
               </CardContent>
             </Card>

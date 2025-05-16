@@ -4,8 +4,11 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white">
+        <div className="absolute inset-0 bg-[url('/ivfluids.jpg')] opacity-50"></div>
+        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
+          <div className="max-w-3xl"></div>
+      
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Labophar Ltd</h1>
           <p className="text-xl max-w-3xl">
             A leading pharmaceutical manufacturer in Rwanda with a mission to provide high-quality affordable medicines.
@@ -27,14 +30,13 @@ export default function AboutPage() {
                 LABOPHAR was acquired from the Government of Rwanda by Depot Pharmaceutique et Materiel Medical
                 Kalisimbi (DPMMK) Ltd in April 2024.
               </p>
-              <p className="text-lg text-gray-700">
-                DPMMK Ltd is an experienced Rwandan owned company that produces and supplies medical oxygen and
-                nitrogen, pharmaceutical products and equipment to different health facilities in Rwanda and in the
-                region.
-              </p>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=800&width=600" alt="Labophar History" fill className="object-cover" />
+              <video
+    src="/highlight.mov"
+    controls
+    className="object-cover w-full h-full"
+  />
             </div>
           </div>
         </div>
@@ -59,7 +61,7 @@ export default function AboutPage() {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold text-skyblue-600 mb-4">Our Vision</h3>
               <p className="text-lg text-gray-700">
-                To be the leading pharmaceutical manufacturer in East Africa, known for quality, innovation, and
+                To be the leading pharmaceutical manufacturer in Africa, known for quality, innovation, and
                 commitment to improving public health.
               </p>
             </div>
@@ -67,32 +69,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Parent Company */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=800&width=600" alt="DPMMK Facilities" fill className="object-cover" />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">About DPMMK Ltd</h2>
-              <p className="text-lg text-gray-700 mb-4">
-                Depot Pharmaceutique et Materiel Medical Kalisimbi (DPMMK) Ltd is an experienced Rwandan owned company
-                that acquired Labophar in April 2024.
-              </p>
-              <p className="text-lg text-gray-700 mb-4">
-                DPMMK produces and supplies medical oxygen and nitrogen, pharmaceutical products and equipment to
-                different health facilities in Rwanda and in the region.
-              </p>
-              <p className="text-lg text-gray-700">
-                DPMMK also manages the landfill of Nduba and provides treatment of hazardous waste services to public
-                and private institutions in Rwanda. In 2023, DPMMK Ltd purchased Mageragere industrial incinerator from
-                the Government of Rwanda.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
+           
     </div>
   )
 }

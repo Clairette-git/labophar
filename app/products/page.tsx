@@ -15,7 +15,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Products Section */}
+     {/* Products Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="current" className="w-full">
@@ -27,100 +27,159 @@ export default function ProductsPage() {
             </div>
 
             <TabsContent value="current">
+              <div className="text-center mb-8">
+                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+                  Our current product range includes pharmaceutical formulations manufactured to the highest quality
+                  standards.
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Sample products - replace with actual products */}
+                {/* Current Products List */}
                 <ProductCard
-                  name="Medical Oxygen"
-                  category="Medical Gases"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="High-purity medical oxygen for healthcare facilities."
+                  name="Paracetamol Suspension B.P"
+                  category="Pain Relief & Fever"
+                  image="/placeholder.svg?height=300&width=300&text=Paracetamol"
+                  description="Oral suspension for pain relief and fever reduction."
+                  packSize="100ml"
                 />
 
                 <ProductCard
-                  name="Medical Nitrogen"
-                  category="Medical Gases"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="Medical-grade nitrogen for various healthcare applications."
+                  name="Ibuprofen Suspension B.P"
+                  category="Pain Relief & Anti-inflammatory"
+                  image="/placeholder.svg?height=300&width=300&text=Ibuprofen"
+                  description="Oral suspension for pain relief and inflammation."
+                  packSize="100ml"
                 />
 
                 <ProductCard
-                  name="Paracetamol Tablets"
-                  category="Pain Relief"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="500mg tablets for pain relief and fever reduction."
+                  name="Metronidazole Suspension B.P"
+                  category="Antibiotic"
+                  image="/placeholder.svg?height=300&width=300&text=Metronidazole"
+                  description="Oral suspension for treating bacterial and parasitic infections."
+                  packSize="100ml"
                 />
 
                 <ProductCard
-                  name="Amoxicillin Capsules"
-                  category="Antibiotics"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="250mg and 500mg capsules for bacterial infections."
+                  name="Cotrimoxazole Suspension B.P"
+                  category="Antibiotic"
+                  image="/placeholder.svg?height=300&width=300&text=Cotrimoxazole"
+                  description="Oral suspension for treating various bacterial infections."
+                  packSize="100ml"
                 />
 
                 <ProductCard
-                  name="Metformin Tablets"
-                  category="Diabetes Management"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="500mg tablets for type 2 diabetes management."
+                  name="Camphor Ointment 10% B.P"
+                  category="Topical Treatment"
+                  image="/placeholder.svg?height=300&width=300&text=Camphor"
+                  description="Topical ointment for relieving pain and itching."
+                  packSize="50gr"
                 />
 
                 <ProductCard
-                  name="Omeprazole Capsules"
-                  category="Gastrointestinal"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="20mg capsules for acid reflux and ulcers."
+                  name="Povidone Iodine 10% B.P"
+                  category="Antiseptic"
+                  image="/placeholder.svg?height=300&width=300&text=Povidone"
+                  description="Antiseptic solution for skin disinfection."
+                  packSize="200ml"
+                />
+
+                <ProductCard
+                  name="Lysol 6% B.P"
+                  category="Disinfectant"
+                  image="/placeholder.svg?height=300&width=300&text=Lysol"
+                  description="Disinfectant solution for cleaning and sanitizing surfaces."
+                  packSize="5L"
+                />
+
+                <ProductCard
+                  name="Chlorhexidine/Cetrimide B.P"
+                  category="Antiseptic"
+                  image="/placeholder.svg?height=300&width=300&text=Chlorhexidine"
+                  description="Antiseptic solution for skin cleansing and wound care."
+                  packSize="1L"
+                />
+
+                <ProductCard
+                  name="Emulsifying Ointment B.P"
+                  category="Skin Care"
+                  image="/placeholder.svg?height=300&width=300&text=Emulsifying"
+                  description="Base for compounding medicated ointments and as a skin emollient."
+                  packSize="400gr"
+                />
+
+                <ProductCard
+                  name="Spray Hand Sanitizer"
+                  category="Hygiene"
+                  image="/placeholder.svg?height=300&width=300&text=Spray+Sanitizer"
+                  description="Alcohol-based hand sanitizer in spray form."
+                  packSize="500ml"
+                />
+
+                <ProductCard
+                  name="Gel Hand Sanitizer"
+                  category="Hygiene"
+                  image="/placeholder.svg?height=300&width=300&text=Gel+Sanitizer"
+                  description="Alcohol-based hand sanitizer in gel form."
+                  packSize="500ml"
+                />
+
+                <ProductCard
+                  name="Whitfield Ointment B.P"
+                  category="Antifungal"
+                  image="/placeholder.svg?height=300&width=300&text=Whitfield"
+                  description="Topical ointment for treating fungal skin infections."
+                  packSize="20gr"
+                />
+
+                <ProductCard
+                  name="Morphine Oral Solution B.P"
+                  category="Pain Management"
+                  image="/placeholder.svg?height=300&width=300&text=Morphine"
+                  description="Oral solution for managing severe pain."
+                  packSize="500ml"
+                />
+
+                <ProductCard
+                  name="Hydrogen Peroxide 3% B.P"
+                  category="Antiseptic"
+                  image="/placeholder.svg?height=300&width=300&text=Hydrogen+Peroxide"
+                  description="Antiseptic solution for wound cleansing and disinfection."
+                  packSize="10ml"
                 />
               </div>
             </TabsContent>
 
             <TabsContent value="upcoming">
+              <div className="text-center mb-8">
+                <p className="text-lg text-gray-700">
+                  In the coming year, we will be expanding our product line to include the following IV fluids:
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Upcoming products based on expansion plans */}
+                {/* Upcoming IV Fluids */}
                 <ProductCard
-                  name="Intravenous Fluids"
-                  category="IV Solutions"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="Sterile IV solutions for fluid replacement therapy."
+                  name="Normal Saline"
+                  category="IV Fluids"
+                  image="/placeholder.svg?height=300&width=300&text=Normal+Saline"
+                  description="Isotonic crystalloid fluid for intravenous administration."
                   upcoming={true}
                 />
 
                 <ProductCard
-                  name="IV Bags"
-                  category="Medical Supplies"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="High-quality IV bags for fluid administration."
+                  name="Ringer Lactate"
+                  category="IV Fluids"
+                  image="/placeholder.svg?height=300&width=300&text=Ringer+Lactate"
+                  description="Balanced electrolyte solution for fluid replacement and resuscitation."
                   upcoming={true}
                 />
 
                 <ProductCard
-                  name="Cough Syrup"
-                  category="Respiratory"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="Syrup formulation for cough relief."
-                  upcoming={true}
-                />
-
-                <ProductCard
-                  name="Antibiotic Ointment"
-                  category="Topical Medications"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="Topical ointment for preventing infection in minor cuts and burns."
-                  upcoming={true}
-                />
-
-                <ProductCard
-                  name="Hydrocortisone Cream"
-                  category="Topical Medications"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="Cream for relieving skin inflammation and itching."
-                  upcoming={true}
-                />
-
-                <ProductCard
-                  name="Multivitamin Syrup"
-                  category="Nutritional Supplements"
-                  image="/placeholder.svg?height=300&width=300"
-                  description="Liquid multivitamin supplement for children."
+                  name="Dextrose"
+                  category="IV Fluids"
+                  image="/placeholder.svg?height=300&width=300&text=Dextrose"
+                  description="Glucose solution for intravenous administration."
                   upcoming={true}
                 />
               </div>
@@ -182,10 +241,11 @@ interface ProductCardProps {
   category: string
   image: string
   description: string
+  packSize?: string
   upcoming?: boolean
 }
 
-function ProductCard({ name, category, image, description, upcoming = false }: ProductCardProps) {
+function ProductCard({ name, category, image, description, packSize, upcoming = false }: ProductCardProps) {
   return (
     <Card className="overflow-hidden">
       <div className="relative h-48">
@@ -199,7 +259,12 @@ function ProductCard({ name, category, image, description, upcoming = false }: P
       <CardContent className="p-6">
         <div className="text-sm text-skyblue-500 font-medium mb-1">{category}</div>
         <h3 className="text-xl font-bold mb-2">{name}</h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 mb-2">{description}</p>
+        {packSize && (
+          <div className="mt-2 inline-block bg-gray-100 px-3 py-1 rounded-full text-sm font-medium text-gray-700">
+            Pack Size: {packSize}
+          </div>
+        )}
       </CardContent>
     </Card>
   )

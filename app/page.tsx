@@ -1,15 +1,45 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, FlaskRoundIcon as Flask, Microscope, Pill, ShieldPlus, Truck } from "lucide-react"
+'use client';
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  ArrowRight,
+  FlaskRoundIcon as Flask,
+  Microscope,
+  Pill,
+  ShieldPlus,
+  Truck,
+} from "lucide-react";
+
+const backgroundImages = [
+  "/ivfluids.jpg",
+  "/paracetamol.jpg",
+  "/gel.jpg",
+  "/syrups.jpg"
+];
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000); // 5 seconds per image
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white">
-        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
+      <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-50 animate-kenburns"
+          style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}
+        ></div>
         <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -22,7 +52,11 @@ export default function Home() {
               <Button asChild size="lg" className="bg-white text-skyblue-700 hover:bg-skyblue-50">
                 <Link href="/products">Our Products</Link>
               </Button>
-              <Button asChild size="lg" className="bg-white text-skyblue-700 hover:bg-skyblue-50 border-2 border-white">
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-skyblue-700 hover:bg-skyblue-50 border-2 border-white"
+              >
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -52,12 +86,99 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/placeholder.jpg?height=800&width=600"
                 alt="Labophar Facility"
                 fill
                 className="object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+ {/* Featured Products Section - NEW */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Products</h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Discover our range of high-quality pharmaceutical products manufactured to international standards.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Featured Products */}
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=300&width=300&text=Paracetamol"
+                  alt="Paracetamol Suspension"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="text-lg font-bold mb-1">Paracetamol Suspension B.P</h3>
+                <p className="text-sm text-gray-600 mb-2">Pain Relief & Fever</p>
+                <div className="text-xs bg-gray-100 px-2 py-1 rounded-full inline-block">100ml</div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=300&width=300&text=Povidone"
+                  alt="Povidone Iodine"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="text-lg font-bold mb-1">Povidone Iodine 10% B.P</h3>
+                <p className="text-sm text-gray-600 mb-2">Antiseptic</p>
+                <div className="text-xs bg-gray-100 px-2 py-1 rounded-full inline-block">200ml</div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=300&width=300&text=Hand+Sanitizer"
+                  alt="Hand Sanitizer"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="text-lg font-bold mb-1">Gel Hand Sanitizer</h3>
+                <p className="text-sm text-gray-600 mb-2">Hygiene</p>
+                <div className="text-xs bg-gray-100 px-2 py-1 rounded-full inline-block">500ml</div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=300&width=300&text=Ibuprofen"
+                  alt="Ibuprofen Suspension"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="text-lg font-bold mb-1">Ibuprofen Suspension B.P</h3>
+                <p className="text-sm text-gray-600 mb-2">Pain Relief & Anti-inflammatory</p>
+                <div className="text-xs bg-gray-100 px-2 py-1 rounded-full inline-block">100ml</div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild className="bg-skyblue-500 hover:bg-skyblue-600 text-white">
+              <Link href="/products" className="flex items-center gap-2">
+                View All Products <ArrowRight size={16} />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -81,34 +202,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Pharmaceutical Manufacturing</h3>
                 <p className="text-gray-600">
-                  Manufacturing high-quality pharmaceutical products including our upcoming facility for IV fluids,
-                  bags, syrups and ointments.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
-                  <Flask className="h-6 w-6 text-skyblue-700" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Medical Gases</h3>
-                <p className="text-gray-600">
-                  Production and supply of medical oxygen and nitrogen to healthcare facilities throughout Rwanda and
-                  neighboring regions.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardContent className="pt-6">
-                <div className="bg-skyblue-100 p-3 rounded-full w-fit mb-4">
-                  <ShieldPlus className="h-6 w-6 text-skyblue-700" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Medical Equipment</h3>
-                <p className="text-gray-600">
-                  Supply of essential medical equipment to different health facilities in Rwanda and throughout the
-                  region.
+                  Manufacturing high-quality pharmaceutical products including our upcoming facility for IV fluids, syrups and topicals products.
                 </p>
               </CardContent>
             </Card>
@@ -133,7 +227,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Distribution Network</h3>
                 <p className="text-gray-600">
-                  Efficient distribution of pharmaceutical products throughout Rwanda and neighboring countries.
+                  Efficient distribution of pharmaceutical products throughout Rwanda and Africa.
                 </p>
               </CardContent>
             </Card>
@@ -147,7 +241,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/expand.jpg?height=800&width=600"
                 alt="New Manufacturing Facility"
                 fill
                 className="object-cover"
@@ -157,7 +251,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Strategic Expansion</h2>
               <p className="text-lg text-gray-700 mb-6">
                 LABOPHAR is undertaking a strategic expansion by establishing a new manufacturing facility for
-                intravenous (IV) fluids, bags, syrups and ointments.
+                intravenous (IV) fluids, syrups and topicals products.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 The facility will meet current Good Manufacturing Practices (GMP) and global regulatory requirements,
@@ -169,6 +263,80 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+{/* Partners Section - Updated */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Partners</h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              We collaborate with key government institutions to advance healthcare and pharmaceutical manufacturing in
+              Rwanda.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            {/* Ministry of Health - Clickable */}
+            <a
+              href="https://moh.gov.rw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-105"
+              aria-label="Visit Ministry of Health website"
+            >
+              <div className="bg-white p-5 rounded-lg shadow-md h-40 md:h-44 w-full flex items-center justify-center">
+                <div className="relative h-32 md:h-36 w-full">
+                  <Image src="/MiniHealth.png" alt="Ministry of Health Logo" fill className="object-contain" />
+                </div>
+              </div>
+            </a>
+
+            {/* Minecofin - Clickable */}
+            <a
+              href="https://www.minecofin.gov.rw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-105"
+              aria-label="Visit Minecofin website"
+            >
+              <div className="bg-white p-5 rounded-lg shadow-md h-40 md:h-44 w-full flex items-center justify-center">
+                <div className="relative h-32 md:h-36 w-full">
+                  <Image src="/Minecofin.png" alt="Minecofin Logo" fill className="object-contain" />
+                </div>
+              </div>
+            </a>
+
+            {/* RDB - Clickable */}
+            <a
+              href="https://rdb.rw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-105"
+              aria-label="Visit Rwanda Development Board website"
+            >
+              <div className="bg-white p-5 rounded-lg shadow-md h-40 md:h-44 w-full flex items-center justify-center">
+                <div className="relative h-32 md:h-36 w-full">
+                  <Image src="/rdb_logo.png" alt="Rwanda Development Board Logo" fill className="object-contain" />
+                </div>
+              </div>
+            </a>
+
+            {/* NIRDA - Clickable */}
+            <a
+              href="https://nirda.gov.rw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-105"
+              aria-label="Visit NIRDA website"
+            >
+              <div className="bg-white p-5 rounded-lg shadow-md h-40 md:h-44 w-full flex items-center justify-center">
+                <div className="relative h-32 md:h-36 w-full">
+                  <Image src="/NIRDA.png" alt="NIRDA Logo" fill className="object-contain" />
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>

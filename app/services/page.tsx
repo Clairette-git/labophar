@@ -36,23 +36,17 @@ export default function ServicesPage() {
               icon={<Pill className="h-10 w-10 text-skyblue-700" />}
             />
 
-            <ServiceCard
+            {/* <ServiceCard
               title="Medical Gas Supply"
               description="Production and distribution of medical oxygen and nitrogen to healthcare facilities, ensuring a reliable supply of these essential gases."
               icon={<Flask className="hh-10 w-10 text-skyblue-700" />}
             />
 
             <ServiceCard
-              title="Medical Equipment"
-              description="Supply of essential medical equipment to healthcare facilities, including diagnostic tools, treatment equipment, and monitoring devices."
-              icon={<ShieldPlus className="h-10 w-10 text-skyblue-700" />}
-            />
-
-            <ServiceCard
               title="Waste Management"
               description="Management of the Nduba landfill and provision of hazardous waste treatment services to public and private institutions in Rwanda."
               icon={<Beaker className="h-10 w-10 text-skyblue-7000" />}
-            />
+            /> */}
 
             <ServiceCard
               title="Distribution Network"
@@ -60,11 +54,6 @@ export default function ServicesPage() {
               icon={<Truck className="h-10 w-10 text-skyblue-700" />}
             />
 
-            <ServiceCard
-              title="Technical Support"
-              description="Technical support and maintenance services for medical equipment and gas supply systems, ensuring optimal performance and reliability."
-              icon={<Wrench className="h-10 w-10 text-skyblue-700" />}
-            />
           </div>
         </div>
       </section>
@@ -121,7 +110,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Healthcare Partnerships</h2>
               <p className="text-lg text-gray-700 mb-4">
                 We work closely with healthcare facilities, government agencies, and international organizations to
-                improve healthcare access and outcomes in Rwanda and the region.
+                improve healthcare access and outcomes in Rwanda and Africa.
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 Our partnerships enable us to better understand the needs of healthcare providers and patients, allowing
@@ -129,7 +118,7 @@ export default function ServicesPage() {
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 Through these collaborations, we contribute to strengthening healthcare systems and improving public
-                health in Rwanda and neighboring countries.
+                health in Rwanda and Africa.
               </p>
               <Button asChild className="bg-skyblue-500 hover:bg-skyblue-600 text-white">
                 <Link href="/contact" className="flex items-center gap-2">

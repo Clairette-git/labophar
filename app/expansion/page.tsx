@@ -60,7 +60,7 @@ export default function ExpansionPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
                 <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
@@ -70,18 +70,6 @@ export default function ExpansionPage() {
                 <p className="text-gray-600 mb-4">
                   Sterile intravenous solutions for fluid replacement therapy, including normal saline, dextrose, and
                   Ringer's lactate.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6">
-                <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="IV Bags" width={40} height={40} />
-                </div>
-                <h3 className="text-xl font-bold mb-2">IV Bags</h3>
-                <p className="text-gray-600 mb-4">
-                  High-quality intravenous bags for fluid administration, designed for safety and ease of use.
                 </p>
               </CardContent>
             </Card>
@@ -103,7 +91,7 @@ export default function ExpansionPage() {
                 <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Image src="/placeholder.svg?height=40&width=40" alt="Ointments" width={40} height={40} />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Ointments</h3>
+                <h3 className="text-xl font-bold mb-2">Topicals</h3>
                 <p className="text-gray-600 mb-4">
                   Topical medications for skin conditions, including antibiotic ointments, anti-inflammatory creams, and
                   moisturizing products.
