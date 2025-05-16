@@ -25,14 +25,14 @@ export default function ServicesPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Core Services</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               DPMMK Ltd and Labophar provide a wide range of pharmaceutical services to meet the needs of healthcare
-              facilities throughout Rwanda and neighboring countries.
+              facilities throughout Rwanda and Africa.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               title="Pharmaceutical Manufacturing"
-              description="Production of high-quality pharmaceutical products including tablets, capsules, and our upcoming IV fluids, syrups, and ointments."
+              description="Production of high-quality pharmaceutical products including tablets, capsules, and our upcoming IV fluids, syrups, and topicals products."
               icon={<Pill className="h-10 w-10 text-skyblue-700" />}
             />
 
@@ -50,7 +50,7 @@ export default function ServicesPage() {
 
             <ServiceCard
               title="Distribution Network"
-              description="Efficient distribution of pharmaceutical products throughout Rwanda and neighboring countries, ensuring timely delivery to healthcare facilities."
+              description="Efficient distribution of pharmaceutical products throughout Rwanda and Africa, ensuring timely delivery to healthcare facilities."
               icon={<Truck className="h-10 w-10 text-skyblue-700" />}
             />
 

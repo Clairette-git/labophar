@@ -25,8 +25,8 @@ export default function ExpansionPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">New Manufacturing Facility</h2>
               <p className="text-lg text-gray-700 mb-4">
-                LABOPHAR is establishing a new manufacturing facility for intravenous (IV) fluids, bags, syrups and
-                ointments in Rwanda.
+                LABOPHAR is establishing a new manufacturing facility for intravenous (IV) fluids, syrups and
+                topicals products in Rwanda.
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 The facility will meet current Good Manufacturing Practices (GMP) and global regulatory requirements,
@@ -64,7 +64,7 @@ export default function ExpansionPage() {
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
                 <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="IV Fluids" width={40} height={40} />
+                  <Image src="/ivfluids.jpg?height=40&width=40" alt="IV Fluids" width={40} height={40} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">IV Fluids</h3>
                 <p className="text-gray-600 mb-4">
@@ -77,7 +77,7 @@ export default function ExpansionPage() {
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
                 <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="Syrups" width={40} height={40} />
+                  <Image src="/syrups.jpg?height=40&width=40" alt="Syrups" width={40} height={40} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Syrups</h3>
                 <p className="text-gray-600 mb-4">
