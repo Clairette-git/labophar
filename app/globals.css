@@ -33,6 +33,8 @@
     --ring: 190 85% 66%;
 
     --radius: 0.5rem;
+    
+--navy-blue: 240 100% 24%;
   }
 
   .dark {
@@ -71,7 +73,15 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-normal;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
   }
 }
 @keyframes kenburns {

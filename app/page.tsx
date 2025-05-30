@@ -15,10 +15,10 @@ import {
 } from "lucide-react";
 
 const backgroundImages = [
-  "/ivfluids.jpg",
+  "https://image.made-in-china.com/2f0j00uKncbkEggaoD/IV-Vitamin-Drip-Machine-Intravenous-Fluids-Filler-and-Sealer-Equipment-with-Good-Service.webp",
   "/paracetamol.jpg",
-  "/gel.jpg",
-  "/syrups.jpg"
+  "https://making.com/wp-content/uploads/2021/06/Gel-bottles-transfer-on-conveyor-belt-system-of-gel-filling-machine-in-an-industry-scaled.jpg?w=530&h=330&auto=format,compress&fit=crop&q=60&crop=edges&dpr=1",
+  "https://img.freepik.com/premium-psd/pharmaceutical-medicine-syrup-bottle-packaging-mockup_47987-4812.jpg"
 ];
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-50 animate-kenburns"
+          className="absolute inset-0 bg-cover bg-center opacity-70 animate-kenburns"
           style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}
         ></div>
         <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
@@ -111,7 +111,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=300&text=Paracetamol"
+                  src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=300&h=300&fit=crop&crop=center"
                   alt="Paracetamol Suspension"
                   fill
                   className="object-cover"
@@ -127,7 +127,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=300&text=Povidone"
+                  src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=300&h=300&fit=crop&crop=center"
                   alt="Povidone Iodine"
                   fill
                   className="object-cover"
@@ -143,7 +143,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=300&text=Hand+Sanitizer"
+                  src="http://content.health.harvard.edu/wp-content/uploads/2021/09/a93b41ec-6510-4053-acd8-3d3cee6504ed.jpg"
                   alt="Hand Sanitizer"
                   fill
                   className="object-cover"
@@ -159,7 +159,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=300&text=Ibuprofen"
+                  src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=300&h=300&fit=crop&crop=center"
                   alt="Ibuprofen Suspension"
                   fill
                   className="object-cover"

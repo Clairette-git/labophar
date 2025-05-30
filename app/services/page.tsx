@@ -3,14 +3,36 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, FlaskRoundIcon as Flask, Pill, ShieldPlus, Truck, Beaker, Wrench } from "lucide-react"
+import {
+  ArrowRight,
+  FlaskRoundIcon as Flask,
+  Pill,
+  Truck,
+  Microscope,
+  GraduationCap,
+  Leaf,
+  Users,
+  UserPlus,
+} from "lucide-react"
 
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white min-h-screen flex items-center">
+        
+        <div className="absolute inset-0">
+                          <Image
+                            src="/services.jpg"
+                            alt="Services"
+                            fill
+                            className="object-cover opacity-70"
+                            priority
+                          />
+                        </div>
+
+        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
+          <div className="max-w-3xl"></div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl max-w-3xl">
             Comprehensive pharmaceutical services and solutions for healthcare facilities across Rwanda and the region.
@@ -24,36 +46,59 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Core Services</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              DPMMK Ltd and Labophar provide a wide range of pharmaceutical services to meet the needs of healthcare
-              facilities throughout Rwanda and Africa.
+              LABOPHAR LIMITED provides a comprehensive range of pharmaceutical services and solutions to meet
+              healthcare needs across Rwanda and Africa.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
-              title="Pharmaceutical Manufacturing"
-              description="Production of high-quality pharmaceutical products including tablets, capsules, and our upcoming IV fluids, syrups, and topicals products."
+              title="Manufacturing of Essential Medicines"
+              description="Local manufacturing of essential medicines to reduce dependence on imports and strengthen the national supply of critical healthcare products, with a focus on oral liquid medicines, antiseptics, and disinfectants."
               icon={<Pill className="h-10 w-10 text-skyblue-700" />}
             />
 
-            {/* <ServiceCard
-              title="Medical Gas Supply"
-              description="Production and distribution of medical oxygen and nitrogen to healthcare facilities, ensuring a reliable supply of these essential gases."
-              icon={<Flask className="hh-10 w-10 text-skyblue-700" />}
+            <ServiceCard
+              title="Research and Development"
+              description="Creating new and improved medicines with better drug formulas and delivery methods that are easy for different patients to use, including children and the elderly."
+              icon={<Microscope className="h-10 w-10 text-skyblue-700" />}
             />
 
             <ServiceCard
-              title="Waste Management"
-              description="Management of the Nduba landfill and provision of hazardous waste treatment services to public and private institutions in Rwanda."
-              icon={<Beaker className="h-10 w-10 text-skyblue-7000" />}
-            /> */}
+              title="Laboratory Services"
+              description="Modern, well-equipped laboratory offering chemical, microbiological, and physical testing services to pharmaceutical companies, universities, and researchers."
+              icon={<Flask className="h-10 w-10 text-skyblue-700" />}
+            />
 
             <ServiceCard
-              title="Distribution Network"
-              description="Efficient distribution of pharmaceutical products throughout Rwanda and Africa, ensuring timely delivery to healthcare facilities."
+              title="Technology Transfer and Training"
+              description="Supporting education and skill development through internships and technology transfer programs in collaboration with the University of Rwanda's Pharmacy Department."
+              icon={<GraduationCap className="h-10 w-10 text-skyblue-700" />}
+            />
+
+            <ServiceCard
+              title="Distribution and Supply Chain"
+              description="Efficient distribution of pharmaceutical products throughout Rwanda and Africa, ensuring timely delivery to healthcare facilities through partnerships with government health supply systems and private distributors."
               icon={<Truck className="h-10 w-10 text-skyblue-700" />}
             />
 
+            <ServiceCard
+              title="Environmental Responsibility"
+              description="Implementing effective waste management systems to ensure all pharmaceutical waste is handled, treated, and disposed of safely and responsibly in compliance with national environmental regulations."
+              icon={<Leaf className="h-10 w-10 text-skyblue-700" />}
+            />
+
+            <ServiceCard
+              title="Community Contribution"
+              description="Supporting the local community and country by providing employment opportunities that contribute to economic growth and social development, helping improve livelihoods."
+              icon={<Users className="h-10 w-10 text-skyblue-700" />}
+            />
+
+            <ServiceCard
+              title="Gender Balance"
+              description="Committed to maintaining gender balance and empowering female professionals across various departments, contributing to a more inclusive and diverse workplace."
+              icon={<UserPlus className="h-10 w-10 text-skyblue-700" />}
+            />
           </div>
         </div>
       </section>
@@ -84,7 +129,7 @@ export default function ServicesPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/quality.jpg?height=800&width=600"
                 alt="Quality Assurance"
                 fill
                 className="object-cover"
@@ -100,7 +145,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/healthcare.jpg?height=800&width=600"
                 alt="Healthcare Partnerships"
                 fill
                 className="object-cover"

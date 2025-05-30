@@ -8,8 +8,21 @@ export default function ExpansionPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white min-h-screen flex items-center">
+        
+        <div className="absolute inset-0">
+                          <Image
+                            src="/about.png"
+                            alt="Pharmaceutical products and medicines"
+                            fill
+                            className="object-cover opacity-80"
+                            priority
+                          />
+                        </div>
+
+        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
+          <div className="max-w-3xl"></div>
+      
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Strategic Expansion</h1>
           <p className="text-xl max-w-3xl">
             LABOPHAR is undertaking a strategic expansion to enhance our manufacturing capabilities and product
@@ -39,7 +52,7 @@ export default function ExpansionPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/expansion.png?height=800&width=600"
                 alt="New Manufacturing Facility"
                 fill
                 className="object-cover"
@@ -89,7 +102,7 @@ export default function ExpansionPage() {
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
                 <div className="bg-skyblue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Image src="/placeholder.svg?height=40&width=40" alt="Ointments" width={40} height={40} />
+                  <Image src="https://shop.zymox.com/media/06/c6/db/1705416537/88872a379dba489d9b405e43b85ff46c.jpg?ts=1705416537" alt="Ointments" width={40} height={40} className="object-cover"/>
                 </div>
                 <h3 className="text-xl font-bold mb-2">Topicals</h3>
                 <p className="text-gray-600 mb-4">
@@ -108,7 +121,7 @@ export default function ExpansionPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="https://media.istockphoto.com/id/1395533815/photo/close-up-man-hand-arranging-wood-block-with-healthcare-medical-icon-on-hospital-background.jpg?s=612x612&w=0&k=20&c=g_dd2dO5MF74VQFAPtENCUO09qrr4GDwJnz794n6BC4="
                 alt="Healthcare Benefits"
                 fill
                 className="object-cover"
@@ -124,21 +137,21 @@ export default function ExpansionPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-skyblue-500 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-lg text-gray-700">Reduced dependence on imported pharmaceutical products</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-skyblue-500 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-lg text-gray-700">
                     Creation of new employment opportunities for skilled workers
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-skyblue-500 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-lg text-gray-700">Enhanced healthcare infrastructure in the region</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-teal-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-skyblue-500 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-lg text-gray-700">
                     Contribution to Rwanda's economic development and healthcare self-sufficiency
                   </span>
