@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -65,6 +68,19 @@ const config = {
           800: "#166178",
           900: "#195266",
           950: "#0d3544",
+        },
+        navyblue: {
+          DEFAULT: "#000078", // Navy Blue color
+          50: "#e0e0ff",
+          100: "#c1c1ff",
+          200: "#9393ff",
+          300: "#6464ff",
+          400: "#3636ff",
+          500: "#0707ff",
+          600: "#0000c6",
+          700: "#000078",
+          800: "#00004a",
+          900: "#00001c",
         },
       },
       borderRadius: {
