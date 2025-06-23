@@ -42,7 +42,7 @@ export default function ExpansionPage() {
                 topicals products in Rwanda.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                The facility will meet current Good Manufacturing Practices (GMP) and global regulatory requirements,
+                The facility will meet current Good Manufacturing Practice (GMP) and global regulatory requirements,
                 ensuring the highest quality standards for all our products.
               </p>
               <p className="text-lg text-gray-700">
