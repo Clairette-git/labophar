@@ -60,7 +60,7 @@ export default function ServicesPage() {
 
             <ServiceCard
               title="Research and Development"
-              description="Creating new and improved medicines with better drug formulas and delivery methods that are easy for different patients to use, including children and the elderly."
+              description="Creating new and improved medicines with better drug formulas and delivery methods that are safe for different patients to use, including children and the elderly."
               icon={<Microscope className="h-10 w-10 text-skyblue-700" />}
             />
 

@@ -193,7 +193,7 @@ export default function ProductsPage() {
                 />
 
                 <ProductCard
-                  name="Ringer Lactate"
+                  name="Ringer's Lactate"
                   category="IV Fluids"
                   image="https://images.unsplash.com/photo-1576671081837-49000212a370?w=300&h=300&fit=crop&crop=center"
                   description="Balanced electrolyte solution for fluid replacement and resuscitation."
@@ -219,7 +219,7 @@ export default function ProductsPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Quality Standards</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              All our products are manufactured according to Good Manufacturing Practices (GMP) and meet global
+              All our products are manufactured according to Good Manufacturing Practice (GMP) and meet global
               regulatory requirements.
             </p>
           </div>
