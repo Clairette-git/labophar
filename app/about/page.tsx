@@ -32,16 +32,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our History</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Labophar Ltd is a private Rwandan pharmaceutical manufacturing company with a legacy of local production since 1983. In April 2024, the company was acquired from the Government of Rwanda by Depot Pharmaceutique et Matériel Médical Kalisimbi (DPMMK) Ltd, ushering in a new phase focused on expanding Rwanda’s pharmaceutical self-sufficiency.
+                Labophar Ltd is a privately owned Rwandan pharmaceutical manufacturing company with a legacy of local production since 1983. In April 2024, the company was acquired from the Government of Rwanda by Depot Pharmaceutique et Matériel Médical Kalisimbi (DPMMK) Ltd, ushering in a new phase focused on expanding Rwanda’s pharmaceutical self-sufficiency.
 Our mission is to provide high-quality, safe, and affordable medicines to improve health outcomes in Rwanda and across Africa.
 This strategic acquisition is part of a national effort to reduce dependence on imported medicines, which often leads to shortages, quality inconsistencies, and supply delays. In response, Labophar is investing in a modern, GMP-compliant manufacturing facility designed to meet both local and international regulatory standards.
 The facility will initially focus on the production of IV fluids, syrups, and topical pharmaceuticals, with plans to supply both domestic and regional markets starting in 2025.
 With a renewed vision and operational strength under DPMMK, Labophar is positioned to become a key player in Africa’s pharmaceutical manufacturing landscape, delivering quality products and supporting public health systems across the continent.
               </p>
-              <p className="text-lg text-gray-700 mb-4">
-                LABOPHAR was acquired from the Government of Rwanda by Depot Pharmaceutique et Materiel Medical
-                Kalisimbi (DPMMK) Ltd in April 2024.
-              </p>
+            
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <video
