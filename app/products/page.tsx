@@ -11,7 +11,7 @@ export default function ProductsPage() {
       <section className="relative bg-gradient-to-r from-skyblue-700 to-skyblue-300 text-white min-h-screen flex items-center">
               <div className="absolute inset-0">
                         <Image
-                          src="/products.jpg"
+                          src="/Products.jpg"
                           alt="products"
                           fill
                           className="object-cover opacity-70"
