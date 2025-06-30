@@ -12,7 +12,7 @@ export default function ExpansionPage() {
         
         <div className="absolute inset-0">
                           <Image
-                            src="/House.png"
+                            src="/House.jpeg"
                             alt="Pharmaceutical products and medicines"
                             fill
                             className="object-cover opacity-80"
@@ -52,7 +52,7 @@ export default function ExpansionPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/expansion.png?height=800&width=600"
+                src="/House2.jpeg?height=800&width=600"
                 alt="New Manufacturing Facility"
                 fill
                 className="object-cover"
