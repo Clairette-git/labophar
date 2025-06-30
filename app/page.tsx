@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.jpg?height=800&width=600"
+                src="/About_side.jpeg?height=800&width=600"
                 alt="Labophar Facility"
                 fill
                 className="object-cover"
