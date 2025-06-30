@@ -12,7 +12,7 @@ export default function ExpansionPage() {
         
         <div className="absolute inset-0">
                           <Image
-                            src="/about.png"
+                            src="/House.png"
                             alt="Pharmaceutical products and medicines"
                             fill
                             className="object-cover opacity-80"
