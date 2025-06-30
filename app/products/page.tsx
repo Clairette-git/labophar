@@ -63,7 +63,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Paracetamol Suspension B.P"
                   category="Pain Relief & Fever"
-                  image="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=300&h=300&fit=crop&crop=center"
+                  src="/Products.jpg"
                   description="Oral suspension for pain relief and fever reduction in children and adults."
                   packSize="100ml"
                 />
