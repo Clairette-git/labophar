@@ -71,7 +71,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Ibuprofen Suspension B.P"
                   category="Pain Relief & Anti-inflammatory"
-                  image="https://images.unsplash.com/photo-1550572017-edd951b55104?w=300&h=300&fit=crop&crop=center"
+                  image="/Labofone.JPG"
                   description="Oral suspension for pain relief and inflammation reduction."
                   packSize="100ml"
                 />
@@ -79,7 +79,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Metronidazole Suspension B.P"
                   category="Antibiotic"
-                  image="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=300&fit=crop&crop=center"
+                  image="/Labozole.JPG"
                   description="Oral suspension for treating bacterial and parasitic infections."
                   packSize="100ml"
                 />
@@ -87,7 +87,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Cotrimoxazole Suspension B.P"
                   category="Antibiotic"
-                  image="/cotrimazole.jpg"
+                  image="/Bactiphar_co-trimoxazole.JPG"
                   description="Oral suspension for treating various bacterial infections."
                   packSize="100ml"
                 />
@@ -95,7 +95,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Camphor Ointment 10% B.P"
                   category="Topical Treatment"
-                  image="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=300&h=300&fit=crop&crop=center"
+                  image="/Camphor_plus.JPG"
                   description="Topical ointment for relieving pain and itching."
                   packSize="50gr"
                 />
@@ -103,7 +103,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Povidone Iodine 10% B.P"
                   category="Antiseptic"
-                  image="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=300&h=300&fit=crop&crop=center"
+                  image="/Labodine.JPG"
                   description="Antiseptic solution for skin disinfection and wound care."
                   packSize="200ml"
                 />
@@ -127,7 +127,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Emulsifying Ointment B.P"
                   category="Skin Care"
-                  image="https://medicolab.africa/wp-content/uploads/2022/03/EMULSIFYING-OINTMENT-BP-500g.jpeg"
+                  image="/Emulsifying.JPG"
                   description="Base for compounding medicated ointments and as a skin emollient."
                   packSize="400gr"
                 />
@@ -151,7 +151,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Whitfield Ointment B.P"
                   category="Antifungal"
-                  image="https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=300&h=300&fit=crop&crop=center"
+                  image="/Whitfield.JPG"
                   description="Topical ointment for treating fungal skin infections."
                   packSize="20gr"
                 />
@@ -159,7 +159,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Morphine Oral Solution B.P"
                   category="Pain Management"
-                  image="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=300&h=300&fit=crop&crop=center"
+                  image="/Morphine.jpeg"
                   description="Oral solution for managing severe pain in controlled medical settings."
                   packSize="500ml"
                 />
@@ -167,7 +167,7 @@ export default function ProductsPage() {
                 <ProductCard
                   name="Hydrogen Peroxide 3% B.P"
                   category="Antiseptic"
-                  image="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=300&h=300&fit=crop&crop=center"
+                  image="/Hydrogen_Peroxide.JPG"
                   description="Antiseptic solution for wound cleansing and disinfection."
                   packSize="10ml"
                 />
