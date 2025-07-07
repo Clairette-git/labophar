@@ -16,8 +16,8 @@ import {
 
 const backgroundImages = [
   "https://making.com/wp-content/uploads/2021/06/Gel-bottles-transfer-on-conveyor-belt-system-of-gel-filling-machine-in-an-industry-scaled.jpg?w=530&h=330&auto=format,compress&fit=crop&q=60&crop=edges&dpr=1",
-  "/paracetamol.jpg",
-  "https://img.freepik.com/premium-psd/pharmaceutical-medicine-syrup-bottle-packaging-mockup_47987-4812.jpg"
+  "/Labomol.JPG",
+  "/Products.JPG"
 ];
 
 export default function Home() {
@@ -110,7 +110,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=300&h=300&fit=crop&crop=center"
+                  src="/Labomol.JPG"
                   alt="Paracetamol Suspension"
                   fill
                   className="object-cover"
@@ -126,7 +126,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=300&h=300&fit=crop&crop=center"
+                  src="/Labodine.JPG"
                   alt="Povidone Iodine"
                   fill
                   className="object-cover"
@@ -158,7 +158,7 @@ export default function Home() {
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=300&h=300&fit=crop&crop=center"
+                  src="/Labofone.JPG"
                   alt="Ibuprofen Suspension"
                   fill
                   className="object-cover"
